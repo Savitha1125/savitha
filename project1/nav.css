@@ -1,0 +1,44 @@
+ul{
+      height:70px;
+      background-color: lightcoral;
+}
+li{
+      display: inline;
+      font-size: 40px;
+      padding:20px;
+} 
+.savi{
+      font-size: 40px;
+      padding-left: 300px;
+      position: relative;
+      bottom: 45px;
+}
+  .dropdown{
+      display: none;
+      font-size: 20px;
+ }
+ .savi:hover .dropdown{
+      display: block;
+      background-color: skyblue;
+      width: 8%;
+}
+ .dropdown-content{
+     position: absolute;
+     margin-right:10px;
+     display: none;
+     transform: translate(90px);
+     height:150px;
+     width:5%;
+     font-size: 20px;
+     text-align: center;
+      
+}
+.s1:hover+.dropdown-content{
+      display: block;
+     background-color: lightpink;
+     
+      
+
+}
+
+

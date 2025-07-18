@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>calculator</h1>
+  <h2 id="result"></h2>
+      <input type="number" id="num1">
+      <input type="number" id="num2">
+      <button onclick="add()">+</button>
+      <button onclick="sub()">-</button>
+      <button onclick="mul()">*</button>
+      <button onclick="div()">/</button>
+
+
+<script>
+  function cal()
+  {
+ let a=document.getElementById('num1').value;
+ let b=document.getElementById("num2").value; 
+ let c=parseInt(a)+parseInt(b);
+ document.getElementById('res').innerHTML="result is"+c;
+  let result;
+    
+
+  } 
+if (add () '+') {
+    result = num1 + num2;
+}
+else if (sub() '-') {
+    result = num1 - num2;
+}
+else if (mul() '*') {
+    result = num1 * num2;
+}
+else {
+    result = num1 / num2;
+}
+display the result
+console.log(`${num1} ${c} ${num2} = ${result}`);
+</script>
+</body>
+</html>

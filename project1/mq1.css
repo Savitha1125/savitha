@@ -1,0 +1,44 @@
+.one{
+      background-color: aqua;
+      display:flex;
+      flex-wrap: wrap;
+     
+}
+.one1{
+      background-color: black;
+      height:250px;
+      flex-basis: 20%;
+      margin-left: 10px;
+}
+.one2{
+      background-color: black;
+      height:250px;
+      flex-basis:20%;
+      margin-left: 70px;
+}
+.one3{
+      background-color: black;
+      height:250px;
+      flex-basis:20%;
+      margin-left: 90px;
+}
+.one4{
+      background-color: black;
+      height:250px;
+      flex-basis:20%;
+      margin-left: 100px;
+}
+@media  screen and (max-width:800px) {
+ 
+      .one1,.one2, .one3,.one4{
+            flex: 40%;
+            margin: 5px;
+            
+      }
+   
+}
+@media screen and (max-width:600px){
+      .one1,.one2,.one3,.one4{
+            flex:100%;
+      }
+}

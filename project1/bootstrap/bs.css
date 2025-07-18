@@ -1,0 +1,23 @@
+.item{
+      width:25%;
+      height: 95px;
+      background-color: brown;
+      margin: auto;
+}
+ .s{
+      margin-top: 10px !important;
+      padding-bottom: 20px !important;  
+} 
+ .contain{
+      width: 100%;
+      float: left;
+      padding:20px !important;
+} 
+.eee{
+      width:100%;
+      background-color: blueviolet;
+      height:200px;
+} 
+ .r{
+      margin-top:10px !important;
+}

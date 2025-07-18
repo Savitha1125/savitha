@@ -1,0 +1,9 @@
+h1{
+      color:blue;
+      font-family: 'Times New Romam';
+      font-size:large;
+      text-align:center;
+      text-decoration: underline;
+      border-color:orchid;
+      position: static;
+}

@@ -1,0 +1,38 @@
+.section{
+
+      width:100%;
+      height:100px;
+      background-color: blueviolet;
+}
+.center{
+      width:80%;
+      height:100px;
+      margin:0 auto;
+      background-color: lightcoral;
+}
+.left{
+      width:30%;
+      height:100px;
+      background-color: lightskyblue;
+      float:left;
+}
+.right{
+      width:30%;
+      height:100px;
+      background-color: yellow;
+      float: right;
+   
+}
+.row{
+      width:90%;
+      height:40px;
+      background-color: mediumvioletred;
+      margin:2px auto;
+}
+.col{
+      width:30%;
+      height:20px;
+      background-color: mediumturquoise;
+      margin-left: 2px;
+      float:left;
+}

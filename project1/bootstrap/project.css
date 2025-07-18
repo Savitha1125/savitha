@@ -1,0 +1,23 @@
+
+ .hero-section {
+      position: relative;
+      color: white;
+    }
+  /* .content img{
+    margin-bottom: 50px;
+    height:500px;
+    margin-left: 5%;
+  } */
+   .item1{
+    margin-right: 25%;
+   }
+    .color{
+          background-image:url(./../img/about.jpg);
+          height: 300px;
+          background-size: contain;
+          background-repeat: no-repeat;
+    }
+     .nav-item{
+      justify-content: space-around;
+     }   
+    

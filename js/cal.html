@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      
+      
+</head>
+<body>
+      <h1>calculator</h1>
+      <input type="number" id="num1">
+      <input type="number" id="num2">
+      <button onclick="add()">+</button>
+      <button onclick="sub()">-</button>
+      <button onclick="mul()">*</button>
+      <button onclick="div()">/</button>
+      <h3 id="res"></h3> 
+      <script>
+      function add(){
+                  let a=document.getElementById('num1').value;
+                  let b=document.getElementById("num2").value;
+                  let c=parseInt(a)+parseInt(b);
+                  document.getElementById('res').innerHTML="result is"+c;
+            }
+
+            function sub(){
+                  let a=document.getElementById("num1").value;
+                  let b=document.getElementById("num2").value;
+                  let c=parseInt(a)- parseInt(b);
+                  document.getElementById('res').innerHTML="result is"+c;
+            }
+                  function mul(){
+                  let a=document.getElementById("num1").value;
+                  let b=document.getElementById("num2").value;
+                  let c=parseInt(a)*parseInt(b);
+                  document.getElementById('res').innerHTML="result is"+c;
+
+            }
+            
+            
+            function div(){
+                  let a=document.getElementById("num1").value;
+                  let b=document.getElementById("num2").value;
+                  let c=parseInt(a)/parseInt(b);
+                  document.getElementById('res').innerHTML="result is"+c;
+            }
+
+</script>
+</body>
+</html>
+
+      

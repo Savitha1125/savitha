@@ -1,0 +1,110 @@
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+.container-fluid {
+      height: 150px;
+}
+.color {
+      background-color: chartreuse;
+      width: 40%;
+      height: 45px;
+      margin-left: 10%;
+}
+.color1 {
+      background-color: blue;
+      width: 40%;
+      height: 45px;
+}
+.color2 {
+      background-color: blue;
+      width: 40%;
+      height: 45px;
+      margin-left: 10%;
+}
+.color3 {
+      background-color: chartreuse;
+      width: 40%;
+}
+.p-3 {
+      background-color: blueviolet;
+      width: 100%;
+      height: 200px;
+}
+.mb-2 {
+      background-color: red;
+      width: 92%;
+      margin: 0 auto;
+}
+.s {
+      background-color: orange;
+      width: 50%;
+      height: 136px;
+      margin: auto;
+}
+.text {
+      background-color: rgb(240, 113, 55);
+      width: 100%;
+      height: 180px;
+}
+.list {
+      background-color: rgb(243, 235, 17);
+      width: 92%;
+      margin: auto;
+      display: flex;
+      gap: 20px;
+}
+.k,.k1,.k2 {
+      background-color: rgb(55, 240, 101);
+      height: 130px;
+      width: 20%;
+      margin-top: 8px;
+}
+.column {
+      width: 90%;
+      margin-left: 5%;
+}
+.col-md-4 {
+      width: 90%;
+      height: 70px;
+}
+.r {
+      display: flex;
+      gap: 10px;
+}
+.set {
+      margin-left: 4px;
+}
+.set1 {
+      margin-right: 4px;
+}
+.row1 {
+      width: 100%;
+      height: 180px;
+      position: fixed;
+}
+.red {
+      width: 90%;
+      margin: auto;
+}
+.source {
+      background-color: darkcyan;
+      width: 30%;
+      float: right;
+      display: flex;
+      gap: 20px;
+}
+.source1 {
+      background-color: darkcyan;
+      width: 30%;
+}
+.set2 {
+      margin-left: 4px;
+}
+.set3 {
+      margin-right: 4px;
+}
+.item {
+      width: 45%;
+}

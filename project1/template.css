@@ -1,0 +1,226 @@
+.a1{
+      width:100%;
+      height:60px;
+      border:1px black solid ;
+      background-color: blue;
+}
+.savi{
+      width:9%;
+      height:20px;
+      border:1px black solid ;
+      background-color: orangered;
+      margin-left:30px;
+      margin-top: 15px;
+     
+}
+.a2{
+      width:6%;
+      height:35px;
+      border:1px black solid;
+      float:right;
+      margin-left: 15px;
+      margin-top: 15px;
+      margin-right: 150px;
+      background-color: brown;
+
+
+}
+.a3{
+      width:6%;
+      height:35px;
+      border:1px black solid;
+      float:right;
+      margin-left: 18px;
+      margin-top: 15px;
+      margin-right: 13px;
+      background-color:brown;
+
+
+}
+.box1{
+      width:100%;
+      height:200px;
+      border:1px black solid ;
+      background-color: cadetblue;
+}
+.box2{
+      width:9%;
+      height: 60px;
+      border:1px black solid ;
+      margin:0 auto;
+      margin-top: 40px;
+      background-color: chocolate;
+}
+.box3{
+      width:14%;
+      height: 15px;
+      border:1px black solid ;
+      margin:0 auto;
+      margin-top: 30px;
+      margin-left: 45px;
+      background-color: deeppink;
+}
+.template{
+      width:80%;
+      height:30px;
+      border:1px black solid ;
+      background-color:darkolivegreen;
+      margin-top: 35px;
+}
+.container{
+      width:100%;
+      height:800px;
+      border:1px black solid ;
+      background-color: gold;
+}
+.container1{
+      width:60%;
+      height:650px;
+      border:1px black solid ;
+      margin-left: 120px;  
+      margin-top: 20px;
+      background-color: deepskyblue;
+      
+}
+.b1{
+      width:82%;
+      height:95px;
+      border:1px black solid ;
+      margin-left: 80px;
+      margin-top: 95px;
+      background-color: indianred;
+}
+.b2{
+      width:82%;
+      height:95px;
+      border:1px black solid ;
+      margin-top: 75px;
+      margin-left: 80px;   
+      background-color: indianred;
+}
+.b3{
+      width:82%;
+      height:95px;
+      border:1px black solid ;
+      margin-top: 90px;
+      margin-left: 80px;  
+      background-color: indianred; 
+
+}
+.color1{
+    width:80px;
+    height:95px;  
+    border:1px black solid ;
+    margin-bottom:8px;
+    background-color: chartreuse;
+
+}
+.color2{
+    width:80px;
+    height:95px;  
+    border:1px black solid ;
+    margin-bottom:8px;
+    background-color: chartreuse;
+
+}
+.section{
+      width:45%;
+      height:40px;
+      border: 1px black solid;
+      margin:15px 10px 5px 120px;
+      background-color: chartreuse;
+}
+.box5{
+      width:15%;
+      height:300px;
+      border: 1px black solid;
+      float:right;
+      margin-top: 17px;
+      margin-right: 70px;
+      background-color: aquamarine;
+}
+.s{
+      width:10%;
+      height:15px;
+      border: 1px black solid;
+      float:right;
+      margin-top:15px;
+      margin-right:20px;
+      background-color: pink;
+
+}
+.s1{
+      width:10%;
+      height:15px;
+      border: 1px black solid;
+      float:right;
+      margin-right:390px;
+      margin-top:15px;
+      background-color: cornsilk;
+
+}
+.k{
+      width:10%;
+      height:15px;
+      border: 1px black solid;
+      float:right;
+      margin-top:15px;
+      margin-right:20px;
+      background-color: pink;
+   
+}
+.k1{
+      width:10%;
+      height:15px;
+      border: 1px black solid;
+      float:right;
+      margin-right:390px;
+      margin-top:15px;
+      background-color: cornsilk;
+ 
+}
+.e{
+      width:10%;
+      height:15px;
+      border: 1px black solid;
+      float:right;
+      margin-top:15px;
+      margin-right:20px;
+      background-color: pink;
+
+       
+}
+.e1{
+      width:10%;
+      height:15px;
+      border: 1px black solid;
+      float:right;
+      margin-right:390px;
+      margin-top:15px;
+      background-color: cornsilk;
+}
+.s2{
+    width:50%;
+    height:50px;
+    background-color: red;  
+    float:right;
+    margin-right: 130px;
+    border: 1px black solid;
+    
+}
+.k2{
+   width:50%;
+    height:50px;
+    background-color: red;  
+    float:right;
+    margin-right: 130px; 
+    border: 1px black solid;  
+}
+.e2{
+    width:50%;
+    height:50px;
+    background-color: red;  
+    float:right;
+    margin-right: 130px;
+    border: 1px black solid;
+}

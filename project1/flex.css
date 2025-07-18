@@ -1,0 +1,43 @@
+.container{
+
+      min-width: 500px;
+      height:400px;
+      background-color: lemonchiffon;
+      display: flex;
+      flex-direction:row-reverse;
+      flex-wrap:nowrap ;
+      justify-content: center;
+      align-items: center;     
+}
+h3{
+      width:50%;
+      height: 100px;
+      background-color: blueviolet;    
+      padding-top: 30px; 
+      margin: 0 auto;
+}
+.space{
+      
+      min-width: 100px;
+      height:500px;
+      background-color: lightcoral;
+      display:grid;
+      grid-template-rows: 1fr 1fr 1fr;  
+}
+
+.s{
+      width:70%;
+      height:100px;
+      color:brown;
+      background-color: lightseagreen;
+      display: block;
+      
+}
+h2{
+      max-width: 200px;
+
+}
+h1{
+      z-index: 5;
+      background-repeat: no-repeat;
+}
