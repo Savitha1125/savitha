@@ -1,23 +1,46 @@
+.s{
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+  font-weight: bolder;
+}
+.image{
+  background-image: url(./../img/veg-background.jpg);
+  aspect-ratio: 2/1;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding:50px 50px;
+}
+h1{
+  text-align: center;
+}
+.k{
+  margin: auto;
+}
+.row{
+  padding-bottom: 50px;
+}
+p{
+  margin-left: 5px;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
- .hero-section {
-      position: relative;
-      color: white;
-    }
-  /* .content img{
-    margin-bottom: 50px;
-    height:500px;
-    margin-left: 5%;
-  } */
-   .item1{
-    margin-right: 25%;
-   }
-    .color{
-          background-image:url(./../img/about.jpg);
-          height: 300px;
-          background-size: contain;
-          background-repeat: no-repeat;
-    }
-     .nav-item{
-      justify-content: space-around;
-     }   
-    
+.card:hover {
+  transform: scale(1.05);
+
+}
+.item{
+  background-color: green;
+}
+  .one{
+  border-radius: 8px;
+  width:30%;
+  margin-left: 30px;
+  }
+  .two{
+    text-align: center;
+  }
+  
