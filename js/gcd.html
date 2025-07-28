@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <script>
+            function gcd(c,d){
+                  while(d!=0){
+                        let temp=d;
+                        d=c%d;
+                        c=temp;
+                  }
+                  return c;
+                  }
+                  console.log(gcd(68,55));
+                  console.log(gcd(43,77));
+      </script>
+</body>
+</html>
