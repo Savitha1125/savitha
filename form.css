@@ -1,0 +1,77 @@
+#myform{
+      background-color:darksalmon; 
+      padding: 15px;
+      display: table;
+      width:30%;
+     margin: auto;
+     
+}
+#myform label{
+      
+      display: table-cell;
+      font-size: 20px;
+      
+}
+#myform input,#myform select,#myform textarea{
+      padding: 10px;
+      border: 2px solid black;
+      border-radius: 10px;
+      margin-bottom: 5px;
+}
+#form{
+      background-image: url(img/wade-meng-LgCj9qcrfhI-unsplash.jpg);
+}
+#myform button{
+      font-size: 20px;
+      background-color: green;
+      color: white;
+      cursor: pointer;
+      width:30%;
+      padding:10px;
+      margin-top: 5px;
+      border-radius: 7px;
+
+}
+#myform select{
+      font-size: 18px;
+}
+#h{
+      text-align: center;
+}
+/* .gender{
+      display: flex;
+      font-size: 20px;
+      margin-top: -15px;
+} */
+/* .gender label{
+      display: inline-block;
+      margin-left: 45px;
+} */
+ h1{
+      text-align: center;
+} 
+#myform input{
+      display: flex;
+      flex-direction:column;
+      width:80%;
+}
+#myform textarea{
+      display: flex;
+      width: 80%;
+}
+ /* .female{ */
+      /* margin-right: 25px; */
+/* } */
+.s{
+      display: inline-block;
+}
+.color{
+      display: flex;
+      font-size: large;
+}
+.color input[type="radio"] {
+  width: 20px;
+  height: 20px;
+   appearance: auto; 
+  transform: scale(1);
+} 
