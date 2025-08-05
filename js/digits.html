@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+     digits:<input type="text" id="alpha1">
+     <button onclick="count()">Submit</button>
+     <p id="result"></p>
+<script>
+      function count(){
+            let text= document.getElementById("alpha1").value;
+            let alphabet=0;
+            let digit=0;
+            for(i=0;i<text.length;i++){
+                  let s=text[i];
+                  if((s>='a' && s<='z') || (s>='A' && s<='Z')){
+                         alphabet++;
+                  }
+                  else if(s>='0' && s<='9'){
+                        digit++;
+                  }
+                  }
+            document.getElementById("result").innerHTML="Alphabets:"+alphabet+"Digits:"+digit;
+      }
+</script>
+</body>
+</html>

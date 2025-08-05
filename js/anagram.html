@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      String1:<input type="text" id="str1"><Br><br>
+      String2:<input type="text" id="str2">
+      <button onclick="check()">Check</button>
+      <p id="output"></p>
+</body>
+<script>
+      function normalize(str) {
+  return str
+    .toLowerCase()                  
+    .replace(/[^a-z0-9]/g, '')      
+    .split('')                      
+    .sort()                         
+    .join('');  
+}
+      function check(){
+            let s1=document.getElementById("str1").value;
+            let s2=document.getElementById("str2").value;
+            if(normalize(s1)==normalize(s2)){
+                  document.getElementById("output").innerHTML="is an anagrams"
+            }
+            else{
+                  document.getElementById("output").innerHTML="is not an anagram"
+            }
+      }
+
+</script>
+</html>
