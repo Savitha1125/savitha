@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+     Before Swap:<input type="number" id="num">
+     After Swap:<input type="number" id="num1">
+      <button onclick="submit()">Submit</button>
+      <p id="result"></p>
+      <script>
+            function submit(){
+            let x=Number(document.getElementById("num").value);
+            let y=Number(document.getElementById("num1").value);
+            let before=x;
+            let after=y;
+            x=x+y;
+            y=x-y;
+            x=x-y;
+            document.getElementById("result").innerHTML=
+            "Before swap: x = " + before + " y = " + after + "<br>" +
+            "After swap: x = " + x + " y = " + y;
+            
+            }
+
+      
+          
+      </script>
+</body>
+</html>

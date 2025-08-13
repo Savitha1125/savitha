@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      Dob:<input type="date" id="input" min="2008-03-11" max="2025-03-11">
+      <button onclick="dob()">Submit</button>
+      <p id="db"></p>
+      <script>
+           function dob(){
+            let dobString = document.getElementById("input").value;
+            let today=new Date();
+            let birthDate=new Date(dobString);
+            let birthYear=birthDate.getFullYear();
+            let d=today.getFullYear()-birthDate.getFullYear();
+            if (birthYear > 2007) {
+                  document.getElementById("db").innerHTML = " Valid — Year: " + birthYear;
+            }
+                 else {
+                   document.getElementById("db").innerHTML = "Invalid — Year: " + birthYear;
+            }                      
+           }
+</script>
+</body>
+</html>

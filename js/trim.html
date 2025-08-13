@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      Trim<input type="text" id="number" value="  Hello World  ">
+      <button onclick="submit()">Remove Space</button> 
+      <p id="check"></p>
+      <script>
+            function submit(){
+                  let str=(document.getElementById("number").innerHTML="  Hello World ");
+                  let string=str.trim()
+                  document.getElementById("check").innerHTML="result:"+"'"+string+"'";
+            }
+      </script> 
+      
+
+</body>
+</html>

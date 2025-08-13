@@ -96,7 +96,7 @@ function validate(){
       }
       var gender=document.querySelector('input[name=gender]:checked');
       if(gender==null){
-            document.getElementById("gen").innerHTML="Please select your gender";
+            document.getElementById("gen").innerHTML="select your gender";
       }
       else{
             document.getElementById("gen").innerHTML="";

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+<img id="myImage" src="./img/gettyimages-1167560383-612x612-1668795431.avif">
+<p id="result"></p>
+<script>
+      let img=document.getElementById("myImage");
+      let output=document.getElementById("result");
+      img.onload=function(){
+            result.innerHTML=`
+            Displayed Size:${img.width}x${img.height}<br>
+            Actual Size Of The Image:${img.naturalWidth}x${img.naturalHeight}
+      `};
+</script>
+</body>
+</html>

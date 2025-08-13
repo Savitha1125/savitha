@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+       Number Increse & Decrease:<input type="number" id="value">
+      <button onclick="submit()">Increase</button>
+      <button onclick="decrease()">Decrease</button>
+      <p id="check"></p>
+<script>
+      function submit(){
+            let add = Number(document.getElementById("value").value);
+            add++;
+            document.getElementById("value").value = add;
+            document.getElementById("check").innerHTML="current value:" + add;
+      }
+      function decrease(){
+            let sub=Number(document.getElementById("value").value);
+            sub--;
+            document.getElementById("value").value=sub;
+            document.getElementById("check").innerHTML="current value:" +sub;
+      }
+</script>
+
+
+</body>
+</html>
