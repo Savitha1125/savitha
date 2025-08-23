@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <input type="file" id="fileext" placeholder="enter the file name">
+      <button onclick="fileextension()">Get Extension</button>
+      <p id="output"></p>
+      <script>
+            function fileextension(){
+            let filename=document.getElementById("fileext").value;
+            if (filename && filename.includes('.')) {
+            let extension=filename.split('.').pop();
+            document.getElementById("output").innerText="The extension is:"+extension;
+            }
+            }
+      </script> 
+</body>
+</html>

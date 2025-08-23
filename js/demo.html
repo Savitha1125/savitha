@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+      Search:<input type="text" id="box" onkeyup="displayTable()" placeholder="Search here...">
+      Filter:<input type="text" id="box1" onkeyup="displayTable()" placeholder="Filter here..."><br><br>
+      
+  <button onclick="insertvalues()">Insert</button>
+  <button onclick="deleteProduct()">Delete</button>
+  <button onclick="updateProduct()">Update</button><br><br>
+
+      <div id="table"></div>
+      <script>
+            let products=[
+                  {id:1, name:"saree", price:5000, category:"fashion", rating:5, location:"Coimbatore"},
+                  {id:2, name:"Phone", price:25000, category:"Electronics", rating:4, location:"Bangalore"},
+                  {id:3, name:"Shoes", price:2000, category:"Fashion", rating:3, location:"Mumbai"},
+                  {id:4, name:"Watch", price:5000, category:"Fashion", rating:4, location:"Delhi"},
+                  {id:5, name:"TV", price:40000, category:"Electronics", rating:5, location:"Chennai"},
+                  {id:6, name:"Tablet", price:18000, category:"Electronics", rating:3, location:"Mumbai"},
+                  {id:7, name:"Shirt", price:1500, category:"Fashion", rating:2, location:"Delhi"},
+                  {id:8, name:"Camera", price:35000, category:"Electronics", rating:4, location:"Bangalore"},
+                  {id:9, name:"Fan", price:2500, category:"Home", rating:3, location:"Chennai"},
+                  {id:10, name:"AC", price:45000, category:"Home", rating:5, location:"Mumbai"}
+            ];
+            function renderTable(item){
+            let html = "<table border='1' cellpadding='10'><tr><th>ID</th><th>Name</th><th>Price</th><th>Category</th><th>Rating</th><th>Location</th></tr>";
+            item.forEach(p => {
+                  html+=` <tr>
+                  <td>${p.id}</td>
+                  <td>${p.name}</td>
+                  <td>${p.price}</td>
+                  <td>${p.category}</td>
+                  <td>${p.rating}</td>
+                  <td>${p.location}</td>
+                  </tr>`;
+            });
+            html+="</table>";
+            document.getElementById("table").innerHTML=html;
+      }
+      renderTable(products);
+      function displayTable(){
+            let searchbox=document.getElementById("box").value.toLowerCase();
+            let filterbox=document.getElementById("box1").value.toLowerCase();
+            let search=products.filter(p=>
+                  (p.name.toLowerCase().includes(searchbox)||
+                  String(p.id).includes(searchbox)||
+                  String(p.price).includes(searchbox)||
+                  p.category.toLowerCase().includes(searchbox))&&
+
+                  (p.name.toLowerCase().includes(filterbox)||
+                  p.category.toLowerCase().includes(filterbox)||
+                  p.location.toLowerCase().includes(filterbox))
+      );
+      renderTable(search);
+      }
+      function insertvalues(){
+            let id=prompt("Enter the ID:");
+            let name=prompt("Enter the Name:");
+            let price=prompt("Enter the Price:");
+            let category=prompt("Enter the Category:");
+            let rating=prompt("Enter the Rating:");
+            let location=prompt("Enter the Location:");
+            if(id && name && price && category && rating && location){
+                  products.push(
+                        {id:Number(id),
+                        name:name,
+                        price:Number(price),
+                        category:category,
+                        rating:Number(rating),
+                        location:location
+                  });
+                  alert(
+                        "ID:"+id+"\n"+
+                        "name:"+name+"\n"+
+                        "price:"+price+"\n"+
+                        "category:"+category+"\n"+
+                        "rating:"+rating+"\n"+
+                        "location:"+location+"\n"
+                  );
+                  renderTable(products);
+            }
+      }
+      function deleteProduct(){
+            let id=prompt("Enter the ID of product to delete:");
+            let index=products.findIndex(p=>p.id===Number(id));
+            if(index!==-1){
+                  let remove=products.splice(index,1);
+                  alert("delete product:\n"+
+                        "id:"+remove[0].id+"\n"+
+                        "name:"+remove[0].name+"\n"+
+                        "price:"+remove[0].price+"\n"+
+                        "category:"+remove[0].category+"\n"+
+                        "rating:"+remove[0].rating+"\n"+
+                        "location:"+remove[0].location
+                  );
+                   renderTable(products);     
+            }
+      }
+      function updateProduct(){
+            let id=Number(prompt("Enter the ID of product to update:"));
+            let item=products.find(p=>p.id===id);
+            if(item)
+                  item.name=prompt("Enter the new name:",item.name);
+                  item.price=prompt("Enter the new name:",item.price);
+                  item.category=prompt("Enter the new name:",item.category);
+                  item.rating=prompt("Enter the new name:",item.rating);
+                  item.location=prompt("Enter the new name:",item.location);
+            renderTable(products);
+      }
+            
+      
+      </script>
+</body>
+</html>

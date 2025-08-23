@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+       <script>
+            let Student={
+                  name:"Savi",
+                  id:123,
+                  city:"erode",
+                  address: "Avarankadu"
+            };
+            Student.state="Tamilnadu";
+            Student.name="Savitha";
+            delete Student.id;
+             for(let key in Student){
+                   console.log(key,":",Student[key]);
+             }
+            // console.log("mobile" in Student);
+            // console.log(Student.id);
+      </script> 
+
+
+
+      <script>
+            let Students=[
+                  {name:"savi",age:20,mobile:"9867450310",id:1,address:"cbe"},
+                  {name:"karthi",age:21,mobile:"9867492310",id:2,address:"chennai"},
+                  {name:"nikil",age:5,mobile:"8314972310",id:3,address:"dubai"},
+                  {name:"nila",age:8,mobile:"8314976837",id:4,address:"bangalore"},
+            ];
+             let cars=[
+                  {brand:"Toyota", model:"Corolla", year:2020, ownerId:1},
+                   {brand:"Honda", model:"Civic", year:2019, ownerId:2},
+                   {brand:"BMW", model:"X5", year:2021, ownerId:3},
+                   {brand:"Tesla", model:"Model 3", year:2022, ownerId:1}
+                   ];
+             let employee=[{
+                  name:"kavi",
+                  Work:"IT",
+                  Salary:20000,
+                  age:23,
+             },
+             {
+                   name:"abi",
+                   work:"docter",
+                   salary:30000,
+                   age:20,
+             }];
+
+             Students.unshift(
+                  {
+                        name:"sengottaiyan",
+                        age:45,
+                        id:6,
+                        address:"london"
+
+                  });
+             
+
+             Students.splice(1,0,{
+                  name:"saras",
+                  age:35,
+                  mobile:"8570371426",
+                  id:5,
+                  address:"singapore"
+             });
+             console.log(Students);
+
+
+
+
+             let search1=employee.filter(employee=>employee.name==="kavi");
+             console.log(search1); 
+
+
+
+
+             let filter=cars.filter(cars=>cars.year>2020);
+             console.log(filter);
+
+
+
+            // let search=Students.filter(Students=>Students.name==="savi");
+            // console.log(search);
+            // let search=Students.filter(Student=> Student.age<=20);
+            // console.log(search);
+            // let name1=Students.sort((a,b)=>b.age-(a.age));
+            // console.log(name1);
+            // Students.sort((x,y)=>{
+            // if(x.id===y.id){
+            //       return y.age-x.age;
+            // }
+            // return x.id-y.id;
+            //  });
+            // console.log(Students);
+
+             Students.forEach(Students=>{
+                   if(Students.name==="savi"){
+                         Students.mobile="9444727788",
+                         Students.address="pune"
+                   }
+             });
+             console.log(Students);
+             
+            // let update=Students.map(Students=>{
+            //        if(Students.id===2){
+            //          Students.name="karthikeyan",
+            //          Students.mobile="9159888609"
+            //       }
+            //        return Students;
+            //  });
+            //  console.log(update);
+
+             
+
+            // let Student=Students.filter(S=>S.id!==1);
+            //  console.log(Student);
+
+            //  Students.splice(1,3);
+            //  console.log(Students);
+
+            //  Students.shift();
+            //  console.log(Students);
+
+            //  let delet=Students.filter(Student=>Student.id!==4);
+            //  console.log(delet);
+
+            employee[0].name="savi";
+            employee[0].age=21;
+            console.log(employee);
+
+
+
+            // let stu = Students.findIndex(s => s.id === 2);
+            //       if(stu !== -1){
+            // Students.splice(stu,3 );  
+            //       }
+            // console.log(Students);        
+</script>
+</body>
+</html>

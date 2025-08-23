@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      DATE:<input type="date" id="date">
+     
+      <script>
+           
+            let db=document.getElementById("date");
+            db.min=new Date().toISOString().split('T')[0];
+            db.max=new Date()(Date.now()+10*24*60*60*1000).toISOString().split('T')[0];
+            </script>
+</body>
+</html>

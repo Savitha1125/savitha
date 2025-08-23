@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+     Enter Text:<input type="text" id="alpha1">
+     <button onclick="alpha()">Submit</button>
+     <p id="result"></p>
+</body>
+<script>
+      function alpha(){
+      let text=document.getElementById("alpha1").value;
+      if(text.match(/^[a-zA-Z]+$/)){
+            document.getElementById("result").innerHTML="only alphabets";
+      }
+      else{
+            document.getElementById("result").innerHTML="its wrong";
+      }
+}
+</script>
+</html>

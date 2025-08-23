@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      Check<input type="number" id="float">
+      <button onclick="checknumber()">checknumber</button>
+      <p id="result"></p>
+</body>
+<script>
+      function checknumber(){
+      let num=Number(document.getElementById("float").value);
+      if(num %1===0){
+      document.getElementById("result").innerHTML = num + " is an Integer";
+      }
+      else{
+      document.getElementById("result").innerHTML = num + " is an Float";
+      }
+      }
+      
+</script>
+</html>
