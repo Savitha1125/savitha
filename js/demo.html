@@ -10,7 +10,7 @@
       Search:<input type="text" id="box" onkeyup="displayTable()" placeholder="Search here...">
       Filter:<input type="text" id="box1" onkeyup="displayTable()" placeholder="Filter here..."><br><br>
       
-  <button onclick="insertvalues()">Insert</button>
+  <button onclick="insertproduct()">Insert</button>
   <button onclick="deleteProduct()">Delete</button>
   <button onclick="updateProduct()">Update</button><br><br>
 
@@ -49,17 +49,20 @@
             let filterbox=document.getElementById("box1").value.toLowerCase();
             let search=products.filter(p=>
                   (p.name.toLowerCase().includes(searchbox)||
+                  p.category.toLowerCase().includes(searchbox)||
                   String(p.id).includes(searchbox)||
                   String(p.price).includes(searchbox)||
-                  p.category.toLowerCase().includes(searchbox))&&
-
+                  p.location.toLowerCase().includes(searchbox)
+                  )&&
                   (p.name.toLowerCase().includes(filterbox)||
                   p.category.toLowerCase().includes(filterbox)||
-                  p.location.toLowerCase().includes(filterbox))
+                  p.location.toLowerCase().includes(filterbox)||
+                  String(p.price).includes(filterbox)
+            )
       );
       renderTable(search);
       }
-      function insertvalues(){
+      function insertproduct(){
             let id=prompt("Enter the ID:");
             let name=prompt("Enter the Name:");
             let price=prompt("Enter the Price:");
@@ -113,8 +116,6 @@
                   item.location=prompt("Enter the new name:",item.location);
             renderTable(products);
       }
-            
-      
       </script>
 </body>
 </html>
