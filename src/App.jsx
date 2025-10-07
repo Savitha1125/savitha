@@ -1,18 +1,11 @@
-
-import './App.css'
-import Home from './Home'
+import { BrowserRouter } from "react-router-dom";
+import Router from './Router.jsx'
 
 function App() {
-
-
   return (
-    <>
-  <Home />
-  <Home />
-  <Home />
-  <Home />
-    </>
+    <div>
+      <Router />
+    </div>
   )
 }
-
-export default App
+export default App;

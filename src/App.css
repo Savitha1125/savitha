@@ -1,8 +1,25 @@
-
-
-.bg{
-  background-color: yellow;
-  padding: 10px;
-  width: 32%;
-  float: left;
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+*{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+}
+.nav-link{
+      font-size: large;
+      font-weight: bold;
+      text-decoration: none;
+}
+.card-title{
+      font-size: 30px;
+      text-align: center;
+}
+.contact{
+      font-size: 50px;
+      text-align: center;
+}
+.co{
+      text-align: center;
+      text-decoration: underline;
 }

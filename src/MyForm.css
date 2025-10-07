@@ -1,0 +1,75 @@
+.form{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin:50px auto;
+      transition: all 0.3s ease;
+      background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+.label{
+      font-size: large;
+      font-weight: bold;
+}
+.right{
+      font-size: large;
+      font-weight: bold;
+      margin-left: -40px;
+}
+/* .city{
+      margin-right: 35px;
+}  */
+.select{
+      font-size: large;
+      font-weight: bold;
+      margin-left: 30px; 
+      margin-right: 5px;
+      width:20%;
+}
+.input{
+      margin:5px;
+      padding:5%;
+      border-radius: 4px;
+      width: 100%;
+}
+.submit-button{
+      padding:16px;
+      border-radius: 4px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+}
+.label1{
+      font-size: large;
+      font-weight: bold;
+      margin-right: 70px;
+}
+.label2{
+      font-size: large;
+      font-weight: bold;
+      margin-left: 15px;
+}
+.input1{
+      margin:5px;
+      padding:3%;
+      border-radius: 4px;
+      margin-left: 5px;
+}
+.file{
+      font-size: large;
+      font-weight: bold;
+      margin-left: 59px;
+}
+.text{
+      padding: 5%;
+      border-radius: 4px;
+      margin-left: 35px;
+}
+.error{
+      margin-left: 47px;
+}

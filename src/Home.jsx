@@ -1,12 +1,26 @@
+import Contact from "./Contact";
+import About from "./About";
+import { Button } from "react-bootstrap";
+import {Link, Outlet, useLocation, useNavigate} from "react-router-dom";
 
-
-function Home(){
-      return (
-            <div className="bg">
-                  <h2>home compoenet</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius commodi temporibus facere incidunt eum deserunt, culpa qui cupiditate ratione voluptas repellendus maiores at recusandae, corrupti numquam dignissimos, iure similique hic!</p>
-                  <button>click me</button>
-            </div>
-      )
+export default function Home() {
+    const navigate=useNavigate();
+    const location=useLocation();
+    const goDetail=()=>{
+    navigate("home-details")
+     }
+  return (
+    <>
+      <h2 style={{backgroundImage:`url("./src/assets/pexels-james-wheeler-414612.jpg")`, height: "400px", backgroundPosition:"center",backgroundSize:"cover"}}></h2>
+      {/* <Link to="home-details">View Home Details</Link> */}
+      <Link to="details/101">View Details for ID 101</Link><br/>
+      <Link to="details/102">View Details for ID 102</Link><br/>
+      <Button onClick={goDetail}>View Home-Details</Button>
+      <p>Current URL:{location.pathname}</p> 
+      <Outlet/>
+      <About/>
+      <Contact/>
+    </>
+  );
 }
-export default Home;
+
