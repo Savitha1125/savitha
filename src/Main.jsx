@@ -2,6 +2,7 @@ import React  from 'react';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
+import './index.css';
 // import LikeButton from './Like.jsx';
 // import Savi from './State.jsx';
 // import Form from './Form.jsx';
@@ -13,6 +14,7 @@ import App from './App.jsx';
 // import TodoTable from './Reducer.jsx';
 // import App from './Task.jsx';
 // import App from './MyForm.jsx';
+import Nav from './Navs.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App />
@@ -28,5 +30,6 @@ createRoot(document.getElementById('root')).render(
     {/* <App/> */}
     {/* <App/> */}
     <App />
+    {/* <Nav/> */}
   </StrictMode>,
 )
