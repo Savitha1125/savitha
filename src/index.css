@@ -1,1 +1,72 @@
-@import "tailwindcss";
+body{
+  font-family:  "Roboto", sans-serif;
+}
+
+ .detail {
+  font-size: 14px;
+}
+
+.tooltip-container {
+  position: relative;
+  cursor: pointer;
+  margin-left: 4px;
+}
+.tooltip-container:hover{
+  color: rgb(236, 89, 155);
+}
+
+.text{
+  font-weight: bolder;
+  font-size: 15px;
+}
+.tooltip-container {
+  position: relative;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+
+ .tooltip-single-box {
+  position: absolute;
+  top: 90% !important;           
+  left: 70% !important;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.20);
+  font-size: 13px;
+  white-space: nowrap;
+  text-align: left;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 180px;
+}
+.text{
+  font-weight: bolder;
+  font-size: 15px;
+}
+.tooltip-single-box1 {
+  position: absolute;
+  top: 90%;           
+  left: 92% !important;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #333;
+  padding: 5px 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.20);
+  font-size: 13px;
+  white-space: nowrap;
+  text-align: left;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 230px;
+  border-radius: 6px;
+} 
+.currency-item:hover {
+  color:rgb(236, 89, 155);;   
+}

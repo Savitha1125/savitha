@@ -1,11 +1,14 @@
-import { BrowserRouter } from "react-router-dom";
-import Router from './Router.jsx'
+import React from "react"
+
 
 function App() {
+ 
+
   return (
-    <div>
-      <Router />
-    </div>
+    <>
+    
+    </>
   )
 }
-export default App;
+
+export default App
