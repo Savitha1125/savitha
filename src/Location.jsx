@@ -4,12 +4,14 @@ import './Location.css'
 
 export default function DeliveryLocation() {
   const [showPopup, setShowPopup] = useState(false);
-
+  const [showTooltip,setShowTooltip]=useState(false);
+  
   return (
     <>
-      <div className="location-box" onClick={() => setShowPopup(true)}>
+      <div className="location-box " onClick={() => setShowPopup(true)}>
         <img src={img1} alt="India Flag" className="flag" />
         <span className="country-code">IND</span>
+        <div className="vertical-line"></div>
         <div className="divider"></div>
         <i className="fa-solid fa-location-dot" style={{ marginLeft: "15px" }}></i>
         <span className="choose-text" style={{ marginLeft: "10px" }}>
@@ -69,17 +71,37 @@ export default function DeliveryLocation() {
           </div>
         </div>
       )}
-       <div className="icons-right">
-      <div className="icon">
-        <i class="fi fi-ss-user"></i>
-      </div>
-      <div className="icon">
-        <i class="fi fi-ss-heart"></i>
+      
+        <div className="icons-right ms-5">
+      <div
+        className="icon-user"
+        onMouseEnter={() => setShowTooltip(true)}
+        onMouseLeave={() => setShowTooltip(false)}
+      >
+        <i className="fi fi-ss-user"></i>
+
+        {showTooltip && (
+          <div className="tooltip-user-box">
+            <h4>Welcome</h4>
+            <p className="order">To access account and manage orders</p>
+            <button className="btn btn-outline-dark px-0 py-0">Signup/Login</button>
+            <p className="show">My Winni<br/>
+                My Orders<br/>
+                My Address Book<br/>
+                My Wallet<br/>
+                My Reminder</p>
+          </div>
+        )}
+        </div>
+      <div className="icon-heart me-5">
+        <i class="fi fi-ss-heart">
+
+        </i>
         <span className="badge"></span>
       </div>
-      <div className="icon">
+      <div className="icon2">
         <i class="fi fi-ss-shopping-cart"></i>
-        <span className="badge"></span>
+        <span className="badge"/>
       </div>
     </div>
     </>

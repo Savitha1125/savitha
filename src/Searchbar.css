@@ -73,14 +73,13 @@
 .sub-menu{
   position: absolute;
   top:45px;
-  /* left:30px; */
+
   left:5%;
   font-size: 14px;
 }
 .sub-menu1{
   position: absolute;
   top:45px;
-  /* left: 100px; */
   left: 32%;
   font-size: 14px;
 }
@@ -96,21 +95,18 @@
 .sub-menu00{
   position: absolute;
   top:75px;
-  /* left:30px; */
   left:5%;
   font-size: 14px;
 }
 .sub-menu01{
   position: absolute;
   top:75px;
-  /* left:30px; */
   left:32%;
   font-size: 14px;
 }
 .sub-menu02{
   position: absolute;
   top:75px;
-  /* left:30px; */
   left:63%;
   font-size: 14px;
 }
