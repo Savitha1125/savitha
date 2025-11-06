@@ -1,10 +1,15 @@
+
 import { useState } from "react";
 import img1 from './assets/in.png'; 
 import './Location.css'
+import { useNavigate } from "react-router-dom";
 
 export default function DeliveryLocation() {
   const [showPopup, setShowPopup] = useState(false);
   const [showTooltip,setShowTooltip]=useState(false);
+  const [showWishlist, setShowWishlist] = useState(false);
+  const [showCart, setShowCart] = useState(false);
+const navigate = useNavigate();
   
   return (
     <>
@@ -93,16 +98,27 @@ export default function DeliveryLocation() {
           </div>
         )}
         </div>
-      <div className="icon-heart me-5">
-        <i class="fi fi-ss-heart">
+      <div className="icon-heart me-5"
+       onMouseEnter={() => setShowWishlist(true)}
+  onMouseLeave={() => setShowWishlist(false)}
+  onClick={() => navigate('/wishlist')}>
+
+        <i className="fi fi-ss-heart">
 
         </i>
-        <span className="badge"></span>
+       {showWishlist && (
+    <div className="tooltip-wishlist">
+      Wishlist
+    </div>
+  )}
       </div>
-      <div className="icon2">
+      <div className="icon2"
+      onMouseEnter={() => setShowCart(true)}
+            onMouseLeave={() => setShowCart(false)}
+            onClick={() => navigate("/cart")}>
         <i class="fi fi-ss-shopping-cart"></i>
-        <span className="badge"/>
-      </div>
+        {showCart && <div className="tooltip-cart">Cart</div>}
+          </div>
     </div>
     </>
   );

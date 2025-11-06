@@ -1,0 +1,144 @@
+.detailpage {
+  background-color: lch(96.41% 1.06 18.87);
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+  display: flex;
+  gap: 45px;
+  padding: 15px 20px;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content:flex-start; 
+  white-space: nowrap; 
+  scrollbar-width: none;
+  padding: 15px 50px;
+  overflow-y: visible; 
+  overflow-x: hidden;
+  position: relative; 
+  z-index: 10;
+}
+.menu-items{
+  font-weight: 500;
+  font-size: 13px;
+  color: #444;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-left: 15px;
+}
+.menu-item {
+  font-weight: 500;
+  font-size: 12px;
+  color: #444;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  gap:20px
+}
+
+.menu-item:hover {
+  color: #f65ea2;
+}
+
+.menu-items.active {
+  color: red  !important; 
+  font-weight: bold !important;
+}
+
+
+.delivery-container {
+  position: absolute;
+  right: 10%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #ff3385;
+  font-size: 18px;
+  overflow: hidden;
+  width: 200px; 
+  max-height: 100px;
+  padding-left: 40px; 
+  float: right;
+  padding: 8px;
+}
+
+.scooty {
+  color: #ff3399; 
+  position: relative;
+  animation: moveScooty 2s linear infinite;
+}
+
+  @keyframes moveScooty {
+  0%, 20% {
+    left: -30px;  
+  }
+  100% {
+    left: 260px;  
+  }
+}
+.delivery-text{
+  font-size: 15px;
+  position: relative;
+}
+.dropdown-box {
+  position: absolute;
+  top: 23%;
+  left: 4%;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  z-index: 999;
+  font-size: 11px;
+}
+.menu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-left {
+  display: flex;
+  gap: 22px;
+  font-weight: 600;
+  font-size: 14px;
+}
+/* ✅ Mega Menu Styles */
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  width: 800px;
+  background: #fff;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.menu-column {
+  width: 30%;
+}
+
+.menu-column h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff3385;
+  margin-bottom: 8px;
+}
+
+.menu-column p {
+  font-size: 13px;
+  color: #333;
+  margin: 6px 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-column p:hover {
+  color: #ff3385;
+}
+

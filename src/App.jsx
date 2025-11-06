@@ -5,6 +5,7 @@ import Franchise from './Franchise';
 import DeliveryLocation from './Location';
 import SearchBar from './SearchBar';
 import Wishlist from './Wishlist';         
+import  DetailPage  from './Detail';
 
 export default function App() {
   const location = useLocation();
@@ -24,7 +25,8 @@ export default function App() {
         <Route path="/" element={<Header />} />
         <Route path="/vendor" element={<VendorForm />} />
         <Route path="/franchise" element={<Franchise />} />
-        <Route path="/wishlist" element={<Wishlist />} /> {/* ✅ */}
+        <Route path="/wishlist" element={<Wishlist />} /> 
+        <Route path="/DetailPage" element={<DetailPage />}/>
       </Routes>
     </>
   );
